@@ -38,7 +38,11 @@ h3 {
 
 p {
 	font-size: .875em;
-	line-height: 1.313em;
+	line-height: 21px;
+}
+
+ul {
+	margin: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -53,11 +57,10 @@ header {
 }
 
 header h1 {
-	width: 100%;
+	margin: 0;
 	font-size: 1.875em;
 	border-bottom: 3px solid #77a466;
-	margin: 0;
-	padding: 20px 0;
+	padding: 38px 20px 20px 20px;
 }
 header h1 span {
 	color: #77a466;
@@ -101,12 +104,11 @@ header nav ul li a{
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
-	font-size: 1.125em;
 }
 .main-title p {
 	padding: 0;
 	font-size: 1em;
-	line-height: 1.56em;
+	line-height: 1.5625em;
 }
 
 .section-one,
@@ -114,11 +116,6 @@ header nav ul li a{
 .section-three {
 	width: 100%;
 	border-top: 1px solid #eee;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
 }
 
 .menu {
@@ -159,7 +156,7 @@ footer span {
 }
 
 /* ----------- Tablets larger than 768px wide ----------- */
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
 	.bottom-section {
 		align-items: flex-start;
 		justify-content: space-between;
@@ -176,12 +173,12 @@ footer span {
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
-		padding: 0 20px 0 20px;
+		padding: 0 20px;
 	}
 }
 
 /* ----------- Desktop larger than 1200px wide ----------- */
-@media only screen and (min-width:1200px) {
+@media all and (min-width:1200px) {
 	header nav ul {
 		display: flex;
 		justify-content: space-between;
